@@ -63,7 +63,6 @@ q1=A'/(A*A')*B;
 q2=[q1;zeros(n,1);zeros(n,1)];
 [t5,x1]=ode113(@(t,y)qq2(y,P,n,t,0.5,kk,0.5,1,1),0:0.1:100,q2);% For Self-trained second-order fixed system, it should be t5,x1]=ode113(@(t,y)q5(y,P,n,t,0.5,1.5,kk,0.5,1.5,1,1),0:0.1:100,q2);
 DCT=x1(end,1:n)';
-% D(:,k)=DCT;
 
 %%%%%%% RECONSTRUCTING THE BLOCK %%%%%%%
 
