@@ -47,7 +47,7 @@ random_numbers = randperm(size(block,1)*size(block,2),numSample);%Let each block
 B=C(random_numbers);
 A=T(random_numbers,:);%compression
 
-%%%%%%%%  CROSS-VALIDATION %%%%%%%%%%
+%%%%%%%%  Training %%%%%%%%%%
 
 m=floor(numSample/6);
 disp('Initiating Cross Validation...')
@@ -55,7 +55,7 @@ disp('Initiating Cross Validation...')
 [kk]=crossValidation(A,B,m);%To find the optimal sparsity(Self-trained)
 
 
-%%%%%%%%%%%%%%% Self-trained Second-order finite time SPS %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%  Second-order finite time and fixed time sparse masked autoencoders %%%%%%%%%%%%%%%%%%%
 
 disp('Initiating Self-trained Second-order finite time SPS')
 P=A'/(A*A')*A;
