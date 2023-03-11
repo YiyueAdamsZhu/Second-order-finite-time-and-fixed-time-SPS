@@ -52,7 +52,7 @@ A=T(random_numbers,:);%compression
 m=floor(numSample/6);
 disp('Initiating Cross Validation...')
 
-[kk]=crossValidation(A,B,m);%To find the optimal sparsity(Self-trained)
+[kk]=selftrained(A,B,m);%To find the optimal sparsity(Self-trained)
 
 
 %%%%%%%%%%%%%%%  Second-order finite time and fixed time sparse masked autoencoders %%%%%%%%%%%%%%%%%%%
