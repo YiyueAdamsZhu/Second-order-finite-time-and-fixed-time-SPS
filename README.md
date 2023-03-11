@@ -1,6 +1,6 @@
-# Second-order-finite-time-and-fixed-time-SPS
+# Second-order-finite-time-and-fixed-time-sparse masked autoencoder
 
-README for Second-order-finite-time-and-fixed-time-SPS
+README for econd-order-finite-time-and-fixed-time-sparse masked autoencoder
 
 This repository contains the implementation of the proposed Second-order-finite-time-and-fixed-time-SPS algorithm. The proposed algorithm is designed for sparse signal recovery, and the initial value of the proposed system should fulfill Ax=b, where A is the measurement matrix, x is the original signal, and b is the measurement vector.
 
