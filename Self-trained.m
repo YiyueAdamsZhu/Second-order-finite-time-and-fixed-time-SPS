@@ -13,7 +13,7 @@
 tic;
 
 
-image=imgRead('lena.bmp');
+image=imread('lena.bmp');
 K=16;
 numSample = 150;%One could set it to be smaller than no_blocks_row.
 
